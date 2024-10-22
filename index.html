@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialogflow Chatbot - WorkerWise</title>
+    <!-- Dialogflow Messenger CSS -->
+    <link
+      rel="stylesheet"
+      href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+    />
+    <!-- Dialogflow Messenger JS -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to WorkerWise</h1>
+    <p>
+      This is a basic HTML page with the WorkerWise chatbot integrated to assist
+      migrant workers.
+    </p>
+
+    <!-- Dialogflow Messenger -->
+    <df-messenger
+      oauth-client-id="1032922666276-ob9sifu29b7puvgns607nnknoi9insb6.apps.googleusercontent.com"
+      location="us-central1"
+      project-id="aihchatbot-438608"
+      agent-id="97b118d7-8d91-4dce-96b0-9cdad5ee11d2"
+      language-code="en"
+      max-query-length="-1"
+    >
+      <df-messenger-chat chat-title="WorkerWise"> </df-messenger-chat>
+    </df-messenger>
+  </body>
+</html>
