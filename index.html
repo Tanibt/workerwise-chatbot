@@ -18,7 +18,13 @@
         bottom: 0;
         right: 0;
         top: 0;
-        width: 350px;
+        left: 0; /* Make it full width */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+      }
+      body {
+        margin: 0; /* Remove default body margin */
+        overflow: hidden; /* Prevent scrolling */
       }
     </style>
   </head>
@@ -31,8 +37,8 @@
 
     <!-- Dialogflow Messenger -->
     <df-messenger
-      oauth-client-id="1032922666276-ob9sifu29b7puvgns607nnknoi9insb6.apps.googleusercontent.com"
-      location="us-central1"
+    oauth-client-id="1032922666276-ob9sifu29b7puvgns607nnknoi9insb6.apps.googleusercontent.com"
+    location="us-central1"
       project-id="aihchatbot-438608"
       agent-id="97b118d7-8d91-4dce-96b0-9cdad5ee11d2"
       language-code="en"
